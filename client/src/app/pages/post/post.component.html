@@ -1,0 +1,11 @@
+<ng-container *ngIf="!post; else postTemplate"> Loading... </ng-container>
+
+<ng-template #postTemplate>
+  <h1>
+    {{ post.title }}
+  </h1>
+
+  <p>{{ post.body }}</p>
+
+  <a routerLink="">Back to list</a>
+</ng-template>
